@@ -1,0 +1,149 @@
+@font-face {
+  font-family: logoFont;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+
+.left-container {
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 650px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo > img {
+  width: 100px;
+}
+
+.logo > h1 {
+  color: white;
+  font-size: 100px;
+  font-family:logoFont, sans-serif;
+}
+
+.creditBackground {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.creditBackground > p > a:link, .creditBackground > p > a:visited {
+  color: white;
+}
+
+.right-container {
+  flex-grow: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header, .main, .footer {
+  flex: 1;
+}
+
+.header, .footer {
+  background-color: #F9FAFB;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 100px 50px 50px 50px;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  padding: 30px 50px 30px 50px;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.main > h2 {
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  gap: 50px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  border: 2px solid #E5E7EB;
+  border-radius: 6px;
+  height: 35px;
+  width: 300px;
+  margin-bottom: 30px;
+  font-size: larger;
+  padding-left: 5px;
+}
+
+.form-input:focus {
+  border-color: blue;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.form-input:invalid {
+  border-color: red;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  padding: 50px;
+}
+
+.footer > button {
+  border: 2px solid #596D48;
+  background-color: #596D48;
+  color: white;
+  font-size: larger;
+  border-radius: 8px;
+  width: 225px;
+  height: 50px;
+  margin-bottom: 30px;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer > p > a:link, .footer > p > a:visited {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bolder;
+}

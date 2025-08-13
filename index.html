@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <title>Project: Sign-up Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+        <h1>ODIN</h1>
+      </div>
+      <div class="creditBackground">
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+      </div>
+    </div>
+    <div class="right-container">
+      <form action="#" method="post">
+        <div class="header">
+          <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h2>
+          <h2><br>You <em>know</em> you want to</h2>
+        </div>
+        <div class="main">
+          <h2>Let's do this!</h2>
+          <div class="form">
+            <div class="form-column">
+              <div>
+                <label for="first_name">FIRST NAME</label>
+              </div>
+              <input class="form-input" type="text" id="first_name" name="first_name">
+              <div>
+                <label for="email">EMAIL</label>
+              </div>
+              <input class="form-input" type="email" id="email" name="email">
+              <div>
+                <label for="password">PASSWORD</label>
+              </div>
+              <input class="form-input" type="password" id="password" name="password" required>
+            </div>
+            <div class="form-column">
+              <div>
+                <label for="last_name">LAST NAME</label>
+              </div>
+              <input class="form-input" type="text" id="last_name" name="last_name">
+              <div>
+                <label for="phone_number">PHONE NUMBER</label>
+              </div>
+              <input class="form-input" type="tel" id="phone_number" name="phone_number">
+              <div>
+                <label for="confirm_password">CONFIRM PASSWORD</label>
+              </div>
+              <input class="form-input" type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
